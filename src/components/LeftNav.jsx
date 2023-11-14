@@ -29,6 +29,7 @@ const LeftNav = () => {
           return (
             <>
               <LeftNavMenuItem
+                key={item.name}
                 text={item.type === "home" ? "Home" : item.name}
                 icon={item.icon}
                 action={() => {
